@@ -1,0 +1,42 @@
+{
+    "Food" : [
+        {
+        "name" : "Birria Tacos",
+        "price" : 10,
+        "description" : "Birria tacos are crispy tortillas filled with tender, slow-cooked marinated meat, topped with onions, cilantro, lime, and served with a flavorful broth for dipping.",
+        "image" : "https://media.istockphoto.com/id/1407551369/photo/homemade-steak-birria-meat-tacos.jpg?s=2048x2048&w=is&k=20&c=BPINcUTLcMBjHqkL4fZq5wFHI9w7j81TL1uwcWa8eiw="
+        },
+        {
+        "name" : "Quesabirria",
+        "price" : 11,
+        "description" : "Quesabirria is a cheesy, savory taco filled with slow-cooked, marinated meat, griddled until crispy and served with a side of rich consomé for dipping.",
+        "image" : "https://thumbs.dreamstime.com/z/homemade-beef-birria-tacos-mexican-food-231673882.jpg?ct=jpeg"
+        },
+        {
+        "name" : "Tortabirria",
+        "price" : 12,
+        "description" : "Tortabirria is a delicious Mexican sandwich featuring tender, slow-cooked birria meat piled high on a soft, crusty roll, served with cheese and a flavorful dipping broth.",
+        "image" : "https://media.istockphoto.com/id/1225916351/photo/drowned-cakes-traditional-mexican-food-from-jalisco-guadalajara-mexico-spicy-sandwich-in-a.jpg?s=612x612&w=0&k=20&c=gSVkoEc8a5mo8rQsehUhRhnG_JtV4mt6lx2Brc6nyZ8="
+        },
+        {
+            "name" : "Orchata",
+            "price" : 3,
+            "description" : "Birria tacos are crispy tortillas filled with tender, slow-cooked marinated meat, topped with onions, cilantro, lime, and served with a flavorful broth for dipping.",
+            "image" : "https://media.istockphoto.com/id/1414348785/photo/cold-drink-based-on-horchata-rice-in-a-glass-on-a-wooden-board-with-cinnamon-sticks-on-a.jpg?s=612x612&w=0&k=20&c=M4nWbfdRgyv296v31uUtB0I-Hb7nHSWDeS9EFcWrjEU="
+            },
+            {
+            "name" : "Coca-cola",
+            "price" : 2,
+            "description" : "Quesabirria is a cheesy, savory taco filled with slow-cooked, marinated meat, griddled until crispy and served with a side of rich consomé for dipping.",
+            "image" : "https://images.unsplash.com/photo-1592232583482-ec6367cfb786?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29jYSUyMGNvbGF8ZW58MHx8MHx8fDA%3D"
+            },
+            {
+            "name" : "Fanta",
+            "price" : 2,
+            "description" : "Tortabirria is a delicious Mexican sandwich featuring tender, slow-cooked birria meat piled high on a soft, crusty roll, served with cheese and a flavorful dipping broth.",
+            "image" : "https://images.unsplash.com/photo-1632818924360-68d4994cfdb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFudGF8ZW58MHx8MHx8fDA%3D"
+            }
+
+    ]
+    
+}
