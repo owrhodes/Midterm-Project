@@ -1,26 +1,28 @@
-// // Array of background images
-// const images = [
-//     'images/resturantimg1.jpg', // Change to your actual image paths
-//     'images/resturantimg2.jpg',
-//     'images/resturantimg3.jpg'
-// ];
 
-// let currentIndex = 0; // To keep track of the current image
-// const backgroundSection = document.querySelector('.background-section'); // Select the background section
+   // Array of background images
+const images = [
+    'images/resturantimg1.jpg', // Change to your actual image paths
+    'images/resturantimg2.jpg',
+    'images/resturantimg3.jpg'
+];
 
-// // Function to change the background image
-// function changeBackgroundImage() {
-//     currentIndex = (currentIndex + 1) % images.length; // Cycle through the images
-//     backgroundSection.style.backgroundImage = `url('${images[currentIndex]}')`; // Set the new background image
-// }
+let currentIndex = 0; // To keep track of the current image
+const backgroundSection = document.querySelector('.background-section'); // Select the background section
 
-// // Change background image every 5 seconds
-// setInterval(changeBackgroundImage, 5000);
+// Function to change the background image
+function changeBackgroundImage() {
+    currentIndex = (currentIndex + 1) % images.length; // Cycle through the images
+    backgroundSection.style.backgroundImage = `url('${images[currentIndex]}')`; // Set the new background image
+}
 
-// // Initialize with the first image
-// backgroundSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+// Change background image every 5 seconds
+setInterval(changeBackgroundImage, 5000);
+
+// Initialize with the first image
+backgroundSection.style.backgroundImage = `url('${images[currentIndex]}')`;
 
 function showAll() {
+    
     fetch("./data.json")
     .then(response => response.json())
     .then(Data => loadData(Data.Food))
@@ -37,18 +39,24 @@ function loadData(Data) {
           return;  // Exit if #col is not found
         }
 
+        document.cookie.split(';').forEach(cookie => {
+            const eqPos = cookie.indexOf('=');
+            const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
+            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        });
+
     CardMovie.innerHTML = "";
 
 
         var CardMovie = document.getElementById("col");
         
-        
+
         
         for (var i = 0; i < Data.length; i++) {
             let name = Data[i].name
             let price = Data[i].price;
             let description = Data[i].description;
-            let url = Data[i].image;
+            let url = Data[i].image + "?t=" + new Date().getTime();
             let AddCardMovie = document.createElement("div");
             AddCardMovie.classList.add("col"); // Add Bootstrap class to the column
             AddCardMovie.innerHTML = `
